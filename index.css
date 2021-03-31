@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 100vh;
+    background-image: url(twinpuppies.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+
+.frost {
+    width: 600px;
+    height: 600px;
+    background: inherit;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.frost:before {
+    width: 600px;
+    height: 600px;
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0;
+    right: 0;
+    background: inherit;
+    box-shadow: inset 0 0 0 500px rgba(255, 255, 255, .2);
+    /*filter: blur(10px);*/
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    text-align: center;
+    width: 500px;
+}
+
+#container {
+    width: 1000px;
+    height: 550px;
+    margin-right: 500px;
+}
+
+#calculator {
+    width: 320px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 300px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 700px;
+}
+
+#result {
+    height: 120px;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+
+#output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+#keyboard {
+    height: 400px;
+}
+
+.operator,
+.empty,
+.number {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.empty,
+.number {
+    background-color: white;
+}
+
+.number,
+.operator {
+    cursor: pointer;
+}
+
+.operator:active,
+.number:active {
+    font-size: 13px;
+}
+
+.empty:focus,
+.number:focus,
+.operator:focus {
+    outline: 0;
+}
+
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: green;
+}
+
+button:nth-child(8) {
+    font-size: 20px;
+    background-color: rgb(12, 98, 197);
+}
+
+button:nth-child(12) {
+    font-size: 20px;
+    background-color: rgb(118, 18, 138);
+}
+
+button:nth-child(16) {
+    font-size: 20px;
+    background-color: rgb(179, 7, 136);
+}
+
+button:nth-child(20) {
+    font-size: 20px;
+    background-color: rgb(241, 28, 28);
+}
+
+h3 {
+    color: lightgreen;
+    padding-left: 300px;
+    text-align: center;
+    margin-left: 100px;
+    font-family: sans-serif;
+}
+
+span {
+    color: lightgreen;
+    text-align: center;
+    margin-left: 380px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
